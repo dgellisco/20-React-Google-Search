@@ -1,0 +1,18 @@
+.navbar-div {
+    border-style: solid;
+    border-width: 2px;
+}
+
+.navbar-title {
+    display: inline-block;
+}
+
+.navbar-links-div {
+    display: inline-block;
+}
+
+.navbar-links {
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+}
