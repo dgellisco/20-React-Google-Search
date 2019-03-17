@@ -1,0 +1,14 @@
+.footer {
+  background-color: papayawhip;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-top-style: solid;
+  border-top-width: 1px;
+  text-align: center;
+}
+
+a, a:hover {
+  text-decoration: none;
+  color: black;
+}
