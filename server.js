@@ -12,13 +12,14 @@ app.use(cors());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+app.use(express.static(__dirname));
+app.use(express.static(path.join(__dirname, 'build')));
+app.use(express.static('public'));
+
 // Serve up static assets
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
-// app.use(express.static(__dirname));
-// app.use(express.static(path.join(__dirname, 'build')));
-// app.use(express.static('public'));
 
 // Add routes, both API and view
 app.use(routes);
